@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 // import { gsap } from "gsap";
 // import { TextPlugin } from 'gsap/all';
 import menu_close from "./images/close.svg";
@@ -76,7 +76,9 @@ export default function Navbar() {
                 Contact Me
               </Link>
             </li>
-            <button className="btn btn-dark lastelement">Sign Up</button>
+            <Link to="signup" onClick={closeSidebar}>
+              <button className="btn btn-dark lastelement">Sign Up</button>
+            </Link>
           </ul>
           <div className="main-logo">
             <span className="myName">iNOTES</span>
@@ -96,14 +98,16 @@ export default function Navbar() {
             </Link>
           </div>
           <div>
+            <Link to="signup">
             <button className="btn btn-dark lastspan hideOnMobile">
               Sign Up
             </button>
+            </Link>
           </div>
           <li className="menu-btn" onClick={showSidebar}>
-            <a href="#">
+            <Link to="#">
               <img src={open_menu} alt="menu" />
-            </a>
+            </Link>
           </li>
         </nav>
       </header>

@@ -9,8 +9,3 @@
 --primary-color: #590C59;
 --secondary-color: #FAAD05;
 }
-
-body{
-    background-color: var(--secondary-color);
-    
-}
