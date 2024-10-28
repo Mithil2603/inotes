@@ -10,9 +10,9 @@
   --secondary-color: #FAAD05;
 }
 
-body{
+/* body{
   background-color: var(--primary-color);
-}
+} */
 
 .card{
   width: 18rem;

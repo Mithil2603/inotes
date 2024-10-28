@@ -2,6 +2,7 @@ import React from 'react'
 import student_img from './images/img4.png';
 import "../App.css";
 import "../index.css";
+import { Link } from "react-router-dom";
 
 export default function LandingPage() {
   return (
@@ -13,7 +14,7 @@ export default function LandingPage() {
               <p>“One day, all your hard work will pay off.”</p>
               <div className="hero-buttons">
                 <button className="btn-registration">Registration</button>
-                <button className="btn-start">Start Today</button>
+                <Link to="/notes"><button className="btn-start">Start Today</button></Link>
               </div>
             </div>
             <div className="hero-image">

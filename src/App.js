@@ -1,21 +1,22 @@
-import React from 'react'
+import React from 'react';
 import "./App.css";
 import "./index.css";
 import Navbar from './Components/Navbar';
 // import Subject from './Components/Subject';
-import student_img from './Components/images/img4.png';
 import LandingPage from './Components/LandingPage';
+import Notes from './Components/Notes';
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 export default function App() {
   return (
     <>
-      {/* Home Page */}
-      {/* <Subject title="Data Communication and Networking" desc="nothing just study" />  */}
-      <div className="home-page">
-        <Navbar />
-        <LandingPage />
-        
-      </div>
+      <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/notes" element={<Notes />} />
+          </Routes>
+      </Router>
     </>
   )
 }
