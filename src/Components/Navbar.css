@@ -140,7 +140,7 @@ nav{
 .main-logo{
   color: var(--secondary-color);
   font-weight: bolder;
-  font-size: larger;
+  font-size: 1.5rem;
   padding-left: 2rem;
   margin-right: auto;
 }
