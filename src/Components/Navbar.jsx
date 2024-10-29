@@ -53,7 +53,7 @@ export default function Navbar() {
               Close
             </li>
             <li>
-              <Link to="/" className="gap-3" onClick={closeSidebar}>
+              <Link to="/inotes" className="gap-3" onClick={closeSidebar}>
                 <img src={home_icon} alt="home" className="sidebyside" />
                 Home
               </Link>
@@ -76,15 +76,16 @@ export default function Navbar() {
                 Contact Me
               </Link>
             </li>
-            <Link to="signup" onClick={closeSidebar}>
-              <button className="btn btn-dark lastelement">Sign Up</button>
-            </Link>
+            <div className="d-flex gap-1 flex-wrap">
+              <button className="btn btn-dark lastelement"><Link to="signup" onClick={closeSidebar} className="btn-dark">Sign Up</Link></button>
+              <button className="btn btn-dark lastelement"><Link to="login" onClick={closeSidebar} className="btn-dark">Login</Link></button>
+            </div>
           </ul>
           <div className="main-logo">
             <span className="myName">iNOTES</span>
           </div>
           <div className="li mr-auto">
-            <Link to="/" className="hideOnMobile">
+            <Link to="/inotes" className="hideOnMobile">
               Home
             </Link>
             <Link to="/notes" className="hideOnMobile">
@@ -98,9 +99,9 @@ export default function Navbar() {
             </Link>
           </div>
           <div>
-            <Link to="signup">
+            <Link to="login">
             <button className="btn btn-dark lastspan hideOnMobile">
-              Sign Up
+              Login
             </button>
             </Link>
           </div>

@@ -13,7 +13,8 @@ export default function LandingPage() {
               <h1>Discover the <br /> World with Study.</h1>
               <p>“One day, all your hard work will pay off.”</p>
               <div className="hero-buttons">
-                <button className="btn-registration">Registration</button>
+                <Link to="/signup">
+                <button className="btn-registration">Registration</button></Link>
                 <Link to="/notes"><button className="btn-start">Start Today</button></Link>
               </div>
             </div>
