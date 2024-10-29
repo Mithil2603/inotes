@@ -19,12 +19,12 @@ export default function App() {
           <Navbar />
           <Routes basename='/inotes'>
             <Route path="/inotes" element={<LandingPage />} />
-            <Route path="/notes" element={<Notes />} />
+            <Route path="/inotes/notes" element={<Notes />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/signup' element={<SignUp />} />
             <Route path='/login' element={<Login />} />
-            <Route path='/inotes/dcn' element={<DcnNotes />} />
+            <Route path='/inotes/notes/dcn' element={<DcnNotes />} />
           </Routes>
       </Router>
     </>

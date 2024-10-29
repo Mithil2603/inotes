@@ -59,7 +59,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/notes" className="gap-3" onClick={closeSidebar}>
+              <Link to="/inotes/notes" className="gap-3" onClick={closeSidebar}>
                 <img src={notes} alt="about" className="sidebyside" />
                 Notes
               </Link>
@@ -88,7 +88,7 @@ export default function Navbar() {
             <Link to="/inotes" className="hideOnMobile">
               Home
             </Link>
-            <Link to="/notes" className="hideOnMobile">
+            <Link to="/inotes/notes" className="hideOnMobile">
               Notes
             </Link>
             <Link to="/about" className="hideOnMobile">

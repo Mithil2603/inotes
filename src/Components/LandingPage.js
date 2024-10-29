@@ -15,7 +15,7 @@ export default function LandingPage() {
               <div className="hero-buttons">
                 <Link to="/signup">
                 <button className="btn-registration">Registration</button></Link>
-                <Link to="/notes"><button className="btn-start">Start Today</button></Link>
+                <Link to="/inotes/notes"><button className="btn-start">Start Today</button></Link>
               </div>
             </div>
             <div className="hero-image">
