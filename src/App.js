@@ -24,7 +24,7 @@ export default function App() {
             <Route path='/contact' element={<Contact />} />
             <Route path='/signup' element={<SignUp />} />
             <Route path='/login' element={<Login />} />
-            <Route path='/dcn' element={<DcnNotes />} />
+            <Route path='/inotes/dcn' element={<DcnNotes />} />
           </Routes>
       </Router>
     </>
