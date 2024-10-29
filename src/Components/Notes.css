@@ -9,3 +9,49 @@
 --primary-color: #590C59;
 --secondary-color: #FAAD05;
 }
+
+.container{
+  width: 100vw;
+  height: auto;
+  padding: 1rem;
+  /* background-color: var(--secondary-color); */
+  color: var(--primary-color);
+}
+
+.text-center{
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.card{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: 18rem;
+  text-align: center;
+}
+
+.card-text{
+  height: 7rem;
+  overflow-y: scroll;
+}
+
+.card-text::-webkit-scrollbar {
+  width: 6px; /* Set scrollbar width */
+}
+
+.card-text::-webkit-scrollbar-track {
+  /* background: #888; */
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+.card-text::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar thumb color */
+  background: var(--secondary-color); /* Track color */
+  border-radius: 10px;
+}
+
+.card-text::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Thumb color on hover */
+  cursor: pointer;
+}

@@ -10,6 +10,7 @@ import About from './Components/About';
 import Contact from './Components/Contact';
 import SignUp from './Components/SignUp';
 import Login from './Components/Login';
+import DcnNotes from './Components/DcnNotes';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
             <Route path='/contact' element={<Contact />} />
             <Route path='/signup' element={<SignUp />} />
             <Route path='/login' element={<Login />} />
+            <Route path='/dcn' element={<DcnNotes />} />
           </Routes>
       </Router>
     </>
