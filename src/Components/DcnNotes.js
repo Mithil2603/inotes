@@ -33,8 +33,8 @@ export default function DcnNotes() {
                             <ul>
                                 {(() => {
                                     try {
-                                        return JSON.parse(topic.description_points).map((point, idx) => (
-                                            <li key={idx}>{point}</li>
+                                        return JSON.parse(topic.description_points).map((point) => (
+                                            <li>{point}</li>
                                         ));
                                     } catch (e) {
                                         console.error('Invalid JSON in description_points:', e);

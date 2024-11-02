@@ -12,7 +12,7 @@ export default function Notes() {
             <div class="card-body">
               <h5 class="card-title">Data Communication and Networking</h5>
               <p class="card-text">Data communication is the process of transferring data between two or more devices, while networking is the connection between those devices.</p>
-              <Link to="/inotes/notes/dcn" class="btn btn-dark">View Notes</Link>
+              <Link to="/dcn" class="btn btn-dark">View Notes</Link>
             </div>
         </div>
       </div>

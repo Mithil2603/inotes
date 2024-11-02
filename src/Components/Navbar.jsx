@@ -53,13 +53,13 @@ export default function Navbar() {
               Close
             </li>
             <li>
-              <Link to="/inotes" className="gap-3" onClick={closeSidebar}>
+              <Link to="/" className="gap-3" onClick={closeSidebar}>
                 <img src={home_icon} alt="home" className="sidebyside" />
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/inotes/notes" className="gap-3" onClick={closeSidebar}>
+              <Link to="/notes" className="gap-3" onClick={closeSidebar}>
                 <img src={notes} alt="about" className="sidebyside" />
                 Notes
               </Link>
@@ -85,10 +85,10 @@ export default function Navbar() {
             <span className="myName">iNOTES</span>
           </div>
           <div className="li mr-auto">
-            <Link to="/inotes" className="hideOnMobile">
+            <Link to="/" className="hideOnMobile">
               Home
             </Link>
-            <Link to="/inotes/notes" className="hideOnMobile">
+            <Link to="/notes" className="hideOnMobile">
               Notes
             </Link>
             <Link to="/about" className="hideOnMobile">
