@@ -7,7 +7,7 @@ export default function DcnNotes() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('http://192.168.1.10:5000/api/topics') // Replace with your IP
+        axios.get("https://inotes-node-js-server-production.up.railway.app/api/topics") // Replace with your IP
             .then(response => {
                 console.log('Fetched data:', response.data); // Log fetched data
                 setTopics(response.data);
