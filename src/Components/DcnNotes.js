@@ -37,8 +37,8 @@ export default function DcnNotes() {
                                             <li>{point}</li>
                                         ));
                                     } catch (e) {
-                                        console.error('Invalid JSON in description_points:', e);
-                                        return <li>Invalid data format.</li>;
+                                        // console.error('Invalid JSON in description_points:', e);
+                                        // return <li>Invalid data format.</li>;
                                     }
                                 })()}
                             </ul>
