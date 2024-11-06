@@ -29,16 +29,27 @@ export default function DcnNotes() {
                         <h2 className='bold mt-5'>{topic.topicName}</h2>
                         <p>{topic.topicDescription}</p>
 
-                        {/* Render topicPoints directly */}
+                        {/* Render topicPoints with support for both flat strings and nested structures */}
                         {topic.topicPoints && topic.topicPoints.length > 0 && (
                             <ul>
                                 {topic.topicPoints.map((point, index) => (
-                                    <li key={index}>{point}</li>
+                                    typeof point === "string" ? (
+                                        // If point is a string, render directly
+                                        <li key={index}>{point}</li>
+                                    ) : (
+                                        // If point is an object with mainPoint and subPoints
+                                        <li key={index}>
+                                            <strong>{point.mainPoint}</strong>
+                                            <ul>
+                                                {point.subPoints && point.subPoints.map((subPoint, subIndex) => (
+                                                    <li key={subIndex}>{subPoint}</li>
+                                                ))}
+                                            </ul>
+                                        </li>
+                                    )
                                 ))}
                             </ul>
                         )}
-
-                        {/* Display the image if a URL exists */}
                         {topic.topicImages && (
                             <img src={topic.topicImages} alt={topic.topicName} style={{ maxWidth: '100%' }} />
                         )}
@@ -46,5 +57,6 @@ export default function DcnNotes() {
                 ))
             )}
         </div>
+
     );
 }
