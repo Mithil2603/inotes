@@ -19,8 +19,8 @@ export default function DcnNotes() {
     }, []);
 
     return (
-        <div className="container">
-            <h1 className='center'>Data Communication and Networking</h1>
+        <div className="container font-size-2x">
+            <h1 className='center bold'>Data Communication and Networking</h1>
             {error ? (
                 <p>{error}</p>
             ) : (
