@@ -24,7 +24,7 @@ export default function Footer() {
             </Link>
             <ul className="list-unstyled small">
               <li className="mb-2">Designed and built for the SEM 5 Students of BCA & BSC CS by <a href="https://linkedin.com/in/sutharmithil">Mithil Suthar</a>.</li>
-              <li className="mb-2">Copyright &copy; by <a href="https://linkedin.com/in/sutharmithil">Mithil Suthar</a><br></br>Webpage <a href="https://mithil2603.github.io/misblog/">iNOTES</a> | 2024 - <span id='copyright'>{currentYear}</span></li>
+              <li className="mb-2">Copyright &copy; by <a href="https://linkedin.com/in/sutharmithil">Mithil Suthar</a><br></br>Webpage <a href="https://mithil2603.github.io/inotes/">iNOTES</a> | 2024 - <span id='copyright'>{currentYear}</span></li>
             </ul>
           </div>
           <div className="col-6 col-lg-2 offset-lg-1 mb-3">
