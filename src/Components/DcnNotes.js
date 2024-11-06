@@ -20,12 +20,13 @@ export default function DcnNotes() {
 
     return (
         <div className="container">
+            <h1 className='center'>Data Communication and Networking</h1>
             {error ? (
                 <p>{error}</p>
             ) : (
                 topics.map((topic) => (
                     <div key={topic._id}>
-                        <h2 className='bold'>{topic.topicName}</h2>
+                        <h2 className='bold mt-5'>{topic.topicName}</h2>
                         <p>{topic.topicDescription}</p>
 
                         {/* Render topicPoints directly */}
