@@ -10,10 +10,6 @@
   --secondary-color: #FAAD05;
 }
 
-/* body{
-  background-color: var(--primary-color);
-} */
-
 .card{
   width: 18rem;
   margin: auto;
@@ -100,4 +96,17 @@ main {
 .hero-image img {
   max-width: 300px;
   border-radius: 10px;
+}
+
+.footer-color{
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.white{
+  color: white;
+}
+
+a{
+  color: var(--secondary-color);
 }

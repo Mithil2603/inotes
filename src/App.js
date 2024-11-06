@@ -11,21 +11,24 @@ import Contact from './Components/Contact';
 import SignUp from './Components/SignUp';
 import Login from './Components/Login';
 import DcnNotes from './Components/DcnNotes';
+import MyFooter from "./Components/MyFooter";
+
 
 export default function App() {
   return (
     <>
       <Router>
-          <Navbar />
-          <Routes basename='/inotes'>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/notes" element={<Notes />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/signup' element={<SignUp />} />
-            <Route path='/login' element={<Login />} />
-            <Route path='/dcn' element={<DcnNotes />} />
-          </Routes>
+        <Navbar />
+        <Routes basename='/inotes'>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/notes" element={<Notes />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/signup' element={<SignUp />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/dcn' element={<DcnNotes />} />
+        </Routes>
+        <MyFooter />
       </Router>
     </>
   )
