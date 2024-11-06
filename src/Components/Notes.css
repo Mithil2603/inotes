@@ -16,6 +16,7 @@
   padding: 1rem;
   /* background-color: var(--secondary-color); */
   color: var(--primary-color);
+  /* margin-left: 0; */
 }
 
 .text-center{
@@ -31,8 +32,25 @@
 }
 
 .card-text{
-  height: 7rem;
+  max-height: 7rem;
   overflow-y: scroll;
+}
+
+.card-header, .card-footer, .card-title{
+  color: var(--secondary-color);
+}
+
+.active1{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.btn-close{
+  background-color: var(--secondary-color);
+}
+
+.secondary-color{
+  color: var(--primary-color);
 }
 
 .card-text::-webkit-scrollbar {
