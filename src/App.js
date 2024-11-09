@@ -2,7 +2,6 @@ import React from 'react';
 import "./App.css";
 import "./index.css";
 import Navbar from './Components/Navbar';
-// import Subject from './Components/Subject';
 import LandingPage from './Components/LandingPage';
 import Notes from './Components/Notes';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
