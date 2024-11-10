@@ -12,6 +12,7 @@ import Login from './Components/Login';
 import DcnNotes from './Components/DcnNotes';
 import MyFooter from "./Components/MyFooter";
 import Cia1DCN from './Components/Cia1DCN';
+import Cia2DCN from './Components/Cia2DCN';
 
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/dcn' element={<DcnNotes />} />
           <Route path='/cia1dcn' element={<Cia1DCN />} />
+          <Route path='/cia2dcn' element={<Cia2DCN />} />
         </Routes>
         <MyFooter />
       </Router>

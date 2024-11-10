@@ -34,7 +34,7 @@ export default function Notes() {
                     <li class="list-group-item active1" aria-current="true">CIA2 Papers with Solution</li>
                     <li class="list-group-item secondary-color">A third item</li>
                     <li class="list-group-item secondary-color">A fourth item</li>
-                    <Link to="/cia1dcn" class=""><li class="list-group-item secondary-color">DCN [BCA-5503]</li></Link>
+                    <Link to="/cia2dcn" class=""><li class="list-group-item secondary-color">DCN [BCA-5503]</li></Link>
                     <li class="list-group-item secondary-color">And a fifth one</li>
                   </ul>
                 </div>
