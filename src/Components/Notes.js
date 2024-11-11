@@ -29,6 +29,7 @@ export default function Notes() {
                     <Link to="/cia1dcn"><li class="list-group-item secondary-color">DCN [BCA-5503]</li></Link>
                   </ul>
                   <ul class="list-group mt-5">
+                  <li class="list-group-item active1" aria-current="true">CIA2 Papers with Solution</li>
                     <Link to="/cia2mis"><li class="list-group-item secondary-color">MIS [FC-5033]</li></Link>
                     <Link to="/cia2linux"><li class="list-group-item secondary-color">Linux [BCA-5501]</li></Link>
                     <Link to="/cia2dcn" class=""><li class="list-group-item secondary-color">DCN [BCA-5503]</li></Link>
