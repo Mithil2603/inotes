@@ -13,6 +13,9 @@ import DcnNotes from './Components/DcnNotes';
 import MyFooter from "./Components/MyFooter";
 import Cia1DCN from './Components/Cia1DCN';
 import Cia2DCN from './Components/Cia2DCN';
+import Cia1Linux from './Components/Cia1Linux';
+import Cia2Linux from './Components/Cia2Linux';
+import Cia2MIS from './Components/Cia2MIS';
 
 
 export default function App() {
@@ -30,6 +33,9 @@ export default function App() {
           <Route path='/dcn' element={<DcnNotes />} />
           <Route path='/cia1dcn' element={<Cia1DCN />} />
           <Route path='/cia2dcn' element={<Cia2DCN />} />
+          <Route path='/cia1linux' element={<Cia1Linux />} />
+          <Route path='/cia2linux' element={<Cia2Linux />} />
+          <Route path='/cia2mis' element={<Cia2MIS />} />
         </Routes>
         <MyFooter />
       </Router>
