@@ -27,8 +27,14 @@
 .card{
   background-color: var(--primary-color);
   color: white;
-  width: 18rem;
+  max-width: 18rem;
   text-align: center;
+}
+
+.card-img-top{
+  width: 100%;
+  max-height: 140.51px;
+  object-fit: cover;
 }
 
 .card-text{

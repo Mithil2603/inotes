@@ -43,6 +43,14 @@ export default function Notes() {
             </div>
           </div>
           <div class="card">
+            <img src="https://img.freepik.com/premium-vector/mis-management-information-system-concept-with-icon-set-with-big-word-text-center_25156-1323.jpg" class="card-img-top" alt="Data Communication and Networking" />
+            <div class="card-body">
+              <h5 class="card-title"><b>Management Information System</b></h5>
+              <p class="card-text">A management information system is an information system used for decision-making, and for the coordination, control, analysis, and visualization of information in an organization. The study of the management information systems involves people, processes and technology in an organizational context.</p>
+              <Link to="/mis" class="btn btn-dark">View Notes</Link>
+            </div>
+          </div>
+          <div class="card">
             <img src="https://res.cloudinary.com/drpcouvle/image/upload/v1730194143/dcn_wd0rqp.jpg" class="card-img-top" alt="Data Communication and Networking" />
             <div class="card-body">
               <h5 class="card-title"><b>Data Communication and Networking</b></h5>

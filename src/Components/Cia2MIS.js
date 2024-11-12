@@ -47,7 +47,7 @@ export default function Cia2MIS() {
                       // If point is an object with mainPoint and subPoints
                       <li key={index}>
                         <strong>{point.mainPoint}</strong>
-                        <ul className="p-2">
+                        <ul>
                           {point.subPoints &&
                             point.subPoints.map((subPoint, subIndex) => (
                               <li key={subIndex}>{subPoint}</li>

@@ -17,6 +17,7 @@ import Cia1Linux from './Components/Cia1Linux';
 import Cia2Linux from './Components/Cia2Linux';
 import Cia2MIS from './Components/Cia2MIS';
 import Cia1PHP from './Components/Cia1PHP';
+import MisNotes from './Components/MisNotes';
 
 
 export default function App() {
@@ -32,6 +33,7 @@ export default function App() {
           <Route path='/signup' element={<SignUp />} />
           <Route path='/login' element={<Login />} />
           <Route path='/dcn' element={<DcnNotes />} />
+          <Route path='/mis' element={<MisNotes />} />
           
           <Route path='/cia1linux' element={<Cia1Linux />} />
           <Route path='/cia1php' element={<Cia1PHP />} />
