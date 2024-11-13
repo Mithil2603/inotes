@@ -25,6 +25,7 @@ export default function Notes() {
                 <div class="offcanvas-body">
                   <ul class="list-group">
                     <li class="list-group-item active1" aria-current="true">CIA1 Papers with Solution</li>
+                    <Link to="/cia1mis"><li class="list-group-item secondary-color">MIS [FC-5033]</li></Link>
                     <Link to="/cia1linux"><li class="list-group-item secondary-color">Linux [BCA-5501]</li></Link>
                     <Link to="/cia1php"><li class="list-group-item secondary-color">PHP [BCA-5502]</li></Link>
                     <Link to="/cia1dcn"><li class="list-group-item secondary-color">DCN [BCA-5503]</li></Link>

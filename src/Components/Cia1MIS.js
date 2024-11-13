@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./DcnNotes.css";
 
-export default function Cia2MIS() {
-  const [topics, setTopics] = useState([]);
+export default function Cia1MIS() {
+    const [topics, setTopics] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     axios
       .get(
-        "https://inotes-backend-server-production.up.railway.app/api/notes/cia2mis"
+        "https://inotes-backend-server-production.up.railway.app/api/notes/cia1mis"
       )
       .then((response) => {
         console.log("Fetched data:", response.data); // Log fetched data
@@ -24,7 +24,7 @@ export default function Cia2MIS() {
     <>
       <div className="container font-size-2x">
         <h1 className="center bold">
-          CIA2 Paper Solution <br />
+          CIA1 Paper Solution <br />
           FC 5033 <br />
           Management Information System
         </h1>
@@ -70,5 +70,5 @@ export default function Cia2MIS() {
         )}
       </div>
     </>
-  );
+  )
 }
