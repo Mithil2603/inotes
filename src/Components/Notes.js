@@ -6,6 +6,20 @@ export default function Notes() {
   return (
     <>
       <div className="container">
+      <div aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <Link class="page-link" to="/notes">
+                SEM6
+              </Link>
+            </li>
+            <li class="page-item">
+              <Link class="page-link" to="/notes/sem5">
+                SEM5
+              </Link>
+            </li>
+          </ul>
+        </div>
         <h1 className="text-center mb-5">Sem 6 Notes</h1>
         <div className="d-flex align-items-center flex-wrap gap-3 justify-content-space-around mb-5">
           <div class="card">

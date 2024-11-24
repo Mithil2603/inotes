@@ -1,6 +1,6 @@
-import React from "react";
-// import { gsap } from "gsap";
-// import { TextPlugin } from 'gsap/all';
+import {React, useEffect, useState, useRef} from "react";
+import { gsap } from "gsap";
+import { TextPlugin } from 'gsap/all';
 import menu_close from "./images/close.svg";
 import open_menu from "./images/menu.svg";
 import home_icon from "./images/home.svg";
@@ -11,28 +11,30 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  // gsap.registerPlugin(TextPlugin);
+  gsap.registerPlugin(TextPlugin);
 
-  // const nameRef = useRef();
+  const nameRef = useRef();
 
-  // const [nameText, setNameText] = useState("Study From?");
+  const [nameText, setNameText] = useState("Study From?");
 
-  // useEffect(() => {
-  //   gsap.to(nameRef.current, {
-  //     delay: 1,
-  //     duration: 2,
-  //     text: {
-  //       value: "iNOTES",
-  //       // delimiter: "",
-  //       oldClass: "start",
-  //       newClass: "end",
-  //     },
-  //     onComplete: () => {
-  //       // Animation complete; update state
-  //       setNameText("iNOTES");
-  //     },
-  //   });
-  // }, []);
+  useEffect(() => {
+    gsap.to(nameRef.current, {
+      duration: 1,
+      x: 20,
+      opacity: 0.5,
+      onComplete: () => {
+        nameRef.current.textContent = "";
+  
+        gsap.to(nameRef.current, {
+          duration: 2,
+          text: "iNOTES", 
+          opacity: 1,
+          ease: "power1.inOut",
+        });
+        setNameText("iNOTES");
+      },
+    });
+  }, []);
 
   function showSidebar() {
     const sidebar = document.querySelector(".sidebar");
@@ -82,7 +84,7 @@ export default function Navbar() {
             </div>
           </ul>
           <div className="main-logo">
-            <span className="myName">iNOTES</span>
+            <span ref={nameRef} className="myName">{nameText}</span>
           </div>
           <div className="li mr-auto">
             <Link to="/" className="hideOnMobile">
