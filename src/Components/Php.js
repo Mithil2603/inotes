@@ -1,5 +1,4 @@
 import React from 'react'
-// import CodeBox from './CodeBox'
 import LinuxCommandBox from './LinuxCommandBox'
 
 export default function Php() {
