@@ -19,6 +19,12 @@ import Cia2MIS from './Components/Cia2MIS';
 import Cia1PHP from './Components/Cia1PHP';
 import MisNotes from './Components/MisNotes';
 import Cia1MIS from './Components/Cia1MIS';
+import SEM5 from './Components/Sem5';
+import AspNotes from './Components/AspNotes';
+import DA from './Components/DA';
+import Python from './Components/Python';
+import INF from './Components/INF';
+import DC from './Components/DC';
 
 
 export default function App() {
@@ -29,10 +35,18 @@ export default function App() {
         <Routes basename='/inotes'>
           <Route path="/" element={<LandingPage />} />
           <Route path="/notes" element={<Notes />} />
+          <Route path="/notes/sem5" element={<SEM5 />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='/login' element={<Login />} />
+
+          <Route path='/asp' element={<AspNotes />} />
+          <Route path='/da' element={<DA />} />
+          <Route path='/python' element={<Python />} />
+          <Route path='/inf' element={<INF />} />
+          <Route path='/dc' element={<DC />} />
+
           <Route path='/dcn' element={<DcnNotes />} />
           <Route path='/mis' element={<MisNotes />} />
           

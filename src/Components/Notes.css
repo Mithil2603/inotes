@@ -34,6 +34,7 @@
 .card-img-top{
   width: 100%;
   max-height: 140.51px;
+  min-height: 140.51px;
   object-fit: cover;
 }
 
@@ -78,4 +79,14 @@
 .card-text::-webkit-scrollbar-thumb:hover {
   background: #555; /* Thumb color on hover */
   cursor: pointer;
+}
+
+.page-link{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.page-link:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
