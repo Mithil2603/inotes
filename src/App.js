@@ -10,6 +10,9 @@ import Contact from './Components/Contact';
 import SignUp from './Components/SignUp';
 import Login from './Components/Login';
 import DcnNotes from './Components/DcnNotes';
+import Linux from './Components/Linux';
+import LinuxCommands from './Components/LinuxCommands';
+import Php from './Components/Php';
 import MyFooter from "./Components/MyFooter";
 import Cia1DCN from './Components/Cia1DCN';
 import Cia2DCN from './Components/Cia2DCN';
@@ -49,6 +52,9 @@ export default function App() {
 
           <Route path='/dcn' element={<DcnNotes />} />
           <Route path='/mis' element={<MisNotes />} />
+          <Route path='/php' element={<Php />} />
+          <Route path="/linux" element={<Linux />} />
+          <Route path="/linux_commands" element={<LinuxCommands />} />
           
           <Route path='/cia1mis' element={<Cia1MIS />} />
           <Route path='/cia1linux' element={<Cia1Linux />} />

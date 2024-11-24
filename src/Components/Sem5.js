@@ -1,6 +1,8 @@
 import React from "react";
 import "./Notes.css";
 import { Link } from "react-router-dom";
+import php from "./images/PHP-logo.png";
+import linux from "./images/linux.jpg";
 
 export default function SEM5() {
   return (
@@ -120,6 +122,26 @@ export default function SEM5() {
             </div>
           </div>
           <div class="card">
+            <img src={php} class="card-img-top" alt="PHP" />
+            <div class="card-body">
+              <h5 class="card-title">
+                <b>
+                  PHP <br />
+                  HyperText PreProcessor
+                </b>
+              </h5>
+              <p class="card-text">
+                PHP is a general-purpose scripting language geared towards web
+                development. It was originally created by Danish-Canadian
+                programmer Rasmus Lerdorf in 1993 and released in 1995. The PHP
+                reference implementation is now produced by the PHP Group.
+              </p>
+              <Link to="/php" class="btn btn-dark">
+                View Notes
+              </Link>
+            </div>
+          </div>
+          <div class="card">
             <img
               src="https://res.cloudinary.com/drpcouvle/image/upload/v1730194143/dcn_wd0rqp.jpg"
               class="card-img-top"
@@ -135,6 +157,49 @@ export default function SEM5() {
                 those devices.
               </p>
               <Link to="/dcn" class="btn btn-dark">
+                View Notes
+              </Link>
+            </div>
+          </div>
+          <div class="card">
+            <img src={linux} class="card-img-top" alt="Linux" />
+            <div class="card-body">
+              <h5 class="card-title">
+                <b>
+                  Linux <br />
+                  Programming
+                </b>
+              </h5>
+              <p class="card-text">
+                Linux is a powerful and flexible family of operating systems
+                that are free to use and share. It was created by a person named
+                Linus Torvalds in 1991. What's cool is that anyone can see how
+                the system works because its source code is open for everyone to
+                explore and modify. The Linux Operating System is a type of
+                operating system that is similar to Unix, and it is built upon
+                the Linux Kernel. The Linux Kernel is like the brain of the
+                operating system because it manages how the computer interacts
+                with its hardware and resources. It makes sure everything works
+                smoothly and efficiently.
+              </p>
+              <Link to="/linux" class="btn btn-dark">
+                View Notes
+              </Link>
+            </div>
+          </div>
+          <div class="card">
+            <img src={linux} class="card-img-top" alt="Linux" />
+            <div class="card-body">
+              <h5 class="card-title">
+                <b>Linux Programming Commands</b>
+              </h5>
+              <p class="card-text">
+                Linux provides a vast set of commands used to operate the
+                command-line interface, known as the Terminal, in Linux
+                operating systems. These commands are often used in Shell
+                scripting.
+              </p>
+              <Link to="/linux_commands" class="btn btn-dark">
                 View Notes
               </Link>
             </div>
