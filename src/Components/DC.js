@@ -9,7 +9,7 @@ export default function DC() {
   useEffect(() => {
     axios
       .get(
-        "https://inotes-backend-server-production.up.railway.app/api/notes/asp"
+        "https://inotes-backend-server-production.up.railway.app/api/notes/dc"
       )
       .then((response) => {
         console.log("Fetched data:", response.data); // Log fetched data
