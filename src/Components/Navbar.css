@@ -21,6 +21,7 @@ nav{
 
 .myName{
   font-family: "Poetsen One", sans-serif;
+  pointer-events: none;
 }
 
 nav ul{
