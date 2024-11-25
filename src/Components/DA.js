@@ -46,10 +46,10 @@ export default function DA() {
                       // If point is an object with mainPoint and subPoints
                       <li className="mt-2" key={index}>
                         <strong>{point.mainPoint}</strong>
-                        <ul className="m-2">
+                        <ul className="mt-2 mb-2">
                           {point.subPoints &&
                             point.subPoints.map((subPoint, subIndex) => (
-                              <li className="m-1" key={subIndex}>{subPoint}</li>
+                              <li className="mt-1 mb-1" key={subIndex}>{subPoint}</li>
                             ))}
                         </ul>
                       </li>
