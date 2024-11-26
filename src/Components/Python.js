@@ -61,7 +61,7 @@ export default function Python() {
                 <img
                   src={topic.topicImages}
                   alt={topic.topicName}
-                  style={{ maxWidth: "100%" }}
+                  className="width-50"
                 />
               )}
             </div>

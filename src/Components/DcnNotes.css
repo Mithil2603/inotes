@@ -2,6 +2,16 @@
     color: black;
 }
 
+.container .width-50 {
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    .container .width-50 {
+        width: 50%; 
+    }
+}
+
 .bold{
     font-weight: bolder;
     margin-bottom: 1.5rem;

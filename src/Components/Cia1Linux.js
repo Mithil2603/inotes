@@ -62,7 +62,7 @@ export default function Cia1Linux() {
                 <img
                   src={topic.topicImages}
                   alt={topic.topicName}
-                  style={{ maxWidth: "100%" }}
+                  className="width-50"
                 />
               )}
             </div>

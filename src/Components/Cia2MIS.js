@@ -62,7 +62,7 @@ export default function Cia2MIS() {
                 <img
                   src={topic.topicImages}
                   alt={topic.topicName}
-                  style={{ maxWidth: "100%" }}
+                  className="width-50"
                 />
               )}
             </div>

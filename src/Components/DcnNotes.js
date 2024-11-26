@@ -51,7 +51,7 @@ export default function DcnNotes() {
                             </ul>
                         )}
                         {topic.topicImages && (
-                            <img src={topic.topicImages} alt={topic.topicName} style={{ maxWidth: '100%' }} />
+                            <img src={topic.topicImages} alt={topic.topicName} className="width-50" />
                         )}
                     </div>
                 ))
