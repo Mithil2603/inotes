@@ -28,13 +28,16 @@ const Python = () => {
   return (
     <div className="container font-size-2x">
       <h1 className="center bold">
-        Python for big data and analysis <br />
-        BCA-6403
+        Python for Big Data & Machine Learning <br />
+        BCA-6503
       </h1>
       <div style={{ padding: "1rem", fontFamily: "Arial, sans-serif" }}>
         {contents.map((content) => (
           <div key={content._id} style={{ marginBottom: "2rem" }}>
-            <h2> <b>{content.topicName}</b></h2>
+            <h2>
+              {" "}
+              <b>{content.topicName}</b>
+            </h2>
             <p>{content.topicDescription}</p>
             {content.topicPoints && content.topicPoints.length > 0 && (
               <ul>
