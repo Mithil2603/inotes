@@ -60,6 +60,13 @@ const Python = () => {
                 )}
               </ul>
             )}
+            {content.topicImages && (
+                <img
+                  src={content.topicImages}
+                  alt={content.topicName}
+                  className="width-50"
+                />
+              )}
             {Array.isArray(content.codeExamples) &&
               content.codeExamples.length > 0 && (
                 <div>
