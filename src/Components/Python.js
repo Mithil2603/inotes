@@ -90,37 +90,40 @@ const Python = () => {
                 <div>
                   <h3>Code Examples:</h3>
                   {content.codeExamples.map((example, index) => (
-                    <div key={index} className="code-box">
-                      <div className="upperpart">
-                        <span className="small">{example.language}</span>
-                        <span>
-                          <CopyToClipboard
-                            text={example.code}
-                            onCopy={() => handleCopy(example.code)}
-                          >
-                            <button className="copy-button small">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                height="24px"
-                                viewBox="0 -960 960 960"
-                                width="24px"
-                                fill="#FAAD05"
-                              >
-                                <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z" />
-                              </svg>
-                              {copied ? "Copied!" : "Copy"}
-                            </button>
-                          </CopyToClipboard>
-                        </span>
+                    <>
+                      <div key={index} className="code-box">
+                        <div className="upperpart">
+                          <span className="small">{example.language}</span>
+                          <span>
+                            <CopyToClipboard
+                              text={example.code}
+                              onCopy={() => handleCopy(example.code)}
+                            >
+                              <button className="copy-button small">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  height="24px"
+                                  viewBox="0 -960 960 960"
+                                  width="24px"
+                                  fill="#FAAD05"
+                                >
+                                  <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z" />
+                                </svg>
+                                {copied ? "Copied!" : "Copy"}
+                              </button>
+                            </CopyToClipboard>
+                          </span>
+                        </div>
+                        <div className="lowerpart">
+                          <pre>
+                            <code className={`language-${example.language}`}>
+                              {example.code}
+                            </code>
+                          </pre>
+                        </div>
                       </div>
-                      <div className="lowerpart">
-                        <pre>
-                          <code className={`language-${example.language}`}>
-                            {example.code}
-                          </code>
-                        </pre>
-                      </div>
-                    </div>
+                      <div><li>{example.description}</li></div>
+                    </>
                   ))}
                 </div>
               )}
