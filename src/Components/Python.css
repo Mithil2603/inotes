@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #2f2f2f;
+    --secondary-color: #ffffff;
+}
+
+.notes {
+    padding: "1rem";
+    /* font-family: "Arial, sans-serif"; */
+}
+
+.innernotes {
+    margin-bottom: 2rem;
+}
+
+.code-box {
+    border: 1px solid var(--primary-color);
+    border-radius: .5rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.upperpart {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.small {
+    font-size: medium;
+    color: var(--secondary-color);
+}
+
+.lowerpart {
+    /* background-color: #1e1e1e; */
+    /* color: #df3079; */
+    overflow-X: auto;
+    justify-content: left;
+    width: 100%;
+    padding: 0;
+}
+
+pre {
+    width: inherit;
+    height: inherit;
+    margin-bottom: 0;
+    font-size: large;
+}

@@ -29,7 +29,7 @@ export default function Linux_Commands(props) {
                         </button>
                     </CopyToClipboard>
                 </div>
-                <div className="lowerpart">
+                <div className="lowerpart-code">
                     <p>
                         <span className='cmd1'>{props.cmd1} </span> 
                         <span className="cmd2">{props.cmd2} </span>

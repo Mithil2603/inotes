@@ -46,7 +46,7 @@
     gap: .2rem;
 }
 
-.lowerpart {
+.lowerpart-code {
     height: 60%;
     display: flex;
     align-items: center;
@@ -65,7 +65,7 @@
     font-size: small;
 }
 
-.lowerpart p{
+.lowerpart-code p{
     margin: 0;
     font-family: monospace;
     font-weight: normal;
