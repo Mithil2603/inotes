@@ -91,6 +91,7 @@ const Python = () => {
                   <h3>Code Examples:</h3>
                   {content.codeExamples.map((example, index) => (
                     <>
+                    <div><h3>{example.title}</h3></div>
                       <div key={index} className="code-box">
                         <div className="upperpart">
                           <span className="small">{example.language}</span>
