@@ -123,7 +123,7 @@ const Python = () => {
                           </pre>
                         </div>
                       </div>
-                      <div><li>{example.description}</li></div>
+                      <div><li className="mb-4">{example.description}</li></div>
                     </>
                   ))}
                 </div>
