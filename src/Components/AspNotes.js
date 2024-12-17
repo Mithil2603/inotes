@@ -9,7 +9,7 @@ export default function AspNotes() {
   useEffect(() => {
     axios
       .get(
-        "https://inotes-backend-server-production.up.railway.app/api/notes/asp"
+        "http://52.70.28.21:8080/api/notes/asp"
       )
       .then((response) => {
         console.log("Fetched data:", response.data); // Log fetched data

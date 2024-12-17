@@ -9,7 +9,7 @@ export default function DA() {
   useEffect(() => {
     axios
       .get(
-        "https://inotes-backend-server-production.up.railway.app/api/notes/da"
+        "http://52.70.28.21:8080/api/notes/da"
       )
       .then((response) => {
         console.log("Fetched data:", response.data); // Log fetched data
