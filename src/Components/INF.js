@@ -9,7 +9,7 @@ export default function INF() {
   useEffect(() => {
     axios
       .get(
-        "http://52.70.28.21:8080/api/notes/inf"
+        "https://inotes-h3cex47t.b4a.run/api/notes/inf"
       )
       .then((response) => {
         console.log("Fetched data:", response.data); // Log fetched data

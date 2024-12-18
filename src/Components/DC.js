@@ -9,7 +9,7 @@ export default function DC() {
   useEffect(() => {
     axios
       .get(
-        "http://52.70.28.21:8080/api/notes/dc"
+        "https://inotes-h3cex47t.b4a.run/api/notes/dc"
       )
       .then((response) => {
         console.log("Fetched data:", response.data); // Log fetched data

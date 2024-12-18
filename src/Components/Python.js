@@ -12,7 +12,7 @@ const Python = () => {
   useEffect(() => {
     axios
       .get(
-        "http://52.70.28.21:8080/api/content/python"
+        "https://inotes-h3cex47t.b4a.run/api/content/python"
       )
       .then((response) => {
         setContents(response.data);
