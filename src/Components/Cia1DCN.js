@@ -7,7 +7,7 @@ export default function Cia1DCN() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get("https://inotes-backend-server-production.up.railway.app/api/notes/cia1dcn")
+        axios.get("https://inotes-h3cex47t.b4a.run/api/notes/cia1dcn")
             .then(response => {
                 console.log('Fetched data:', response.data); // Log fetched data
                 setTopics(response.data);
