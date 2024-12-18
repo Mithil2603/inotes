@@ -7,7 +7,7 @@ export default function DcnNotes() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get("https://inotes-backend-server-production.up.railway.app/api/notes/Data Communication and Networking")
+        axios.get("https://inotes-h3cex47t.b4a.run/api/notes/Data Communication and Networking")
             .then(response => {
                 console.log('Fetched data:', response.data); // Log fetched data
                 setTopics(response.data);

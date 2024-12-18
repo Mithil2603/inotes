@@ -9,7 +9,7 @@ export default function MisNotes() {
   useEffect(() => {
     axios
       .get(
-        "https://inotes-backend-server-production.up.railway.app/api/notes/mis"
+        "https://inotes-h3cex47t.b4a.run/api/notes/mis"
       )
       .then((response) => {
         console.log("Fetched data:", response.data); // Log fetched data
