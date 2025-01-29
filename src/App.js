@@ -7,7 +7,6 @@ import Notes from './Components/Notes';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './Components/About';
 import Contact from './Components/Contact';
-import SignUp from './Components/SignUp';
 import DcnNotes from './Components/DcnNotes';
 import Linux from './Components/Linux';
 import LinuxCommands from './Components/LinuxCommands';
@@ -41,7 +40,6 @@ export default function App() {
           <Route path="/notes/sem5" element={<SEM5 />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/signup' element={<SignUp />} />
           <Route path='/profile' element={<Profile />} />
 
           <Route path='/asp' element={<AspNotes />} />

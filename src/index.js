@@ -12,7 +12,7 @@ root.render(
       domain="dev-406wj57i0zv5epye.us.auth0.com"
       clientId="obwMNT1vWsbJvT6opl5cHU5b5AIrfb63"
       authorizationParams={{
-        redirect_uri: window.location.origin,
+        redirect_uri: window.location.origin || 'https://mithil2603.github.io/inotes/',
       }}
     >
       <App />
