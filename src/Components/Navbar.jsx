@@ -1,6 +1,6 @@
-import {React, useEffect, useState, useRef} from "react";
+import { React, useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
-import { TextPlugin } from 'gsap/all';
+import { TextPlugin } from "gsap/all";
 import menu_close from "./images/close.svg";
 import open_menu from "./images/menu.svg";
 import home_icon from "./images/home.svg";
@@ -9,8 +9,12 @@ import notes from "./images/notes.svg";
 import contact from "./images/contacts.svg";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 export default function Navbar() {
+  const { user, loginWithRedirect, isAuthenticated } = useAuth0();
+
+  console.log("Current User", user);
   gsap.registerPlugin(TextPlugin);
 
   const nameRef = useRef();
@@ -18,23 +22,28 @@ export default function Navbar() {
   const [nameText, setNameText] = useState("Study From?");
 
   useEffect(() => {
-    gsap.to(nameRef.current, {
-      duration: 1,
-      x: 20,
-      opacity: 0.5,
-      onComplete: () => {
-        nameRef.current.textContent = "";
-  
-        gsap.to(nameRef.current, {
-          duration: 2,
-          text: "iNOTES", 
-          opacity: 1,
-          ease: "power1.inOut",
-        });
-        setNameText("iNOTES");
-      },
-    });
-  }, []);
+    if (nameRef.current) {
+      gsap.to(nameRef.current, {
+        duration: 1,
+        x: 20,
+        opacity: 0.5,
+        onComplete: () => {
+          if (nameRef.current) {
+            nameRef.current.textContent = ""; // Ensure element exists before modifying
+
+            gsap.to(nameRef.current, {
+              duration: 2,
+              text: "iNOTES",
+              opacity: 1,
+              ease: "power1.inOut",
+            });
+
+            setNameText("iNOTES");
+          }
+        },
+      });
+    }
+  }, []); // Runs only once on mount
 
   function showSidebar() {
     const sidebar = document.querySelector(".sidebar");
@@ -78,13 +87,31 @@ export default function Navbar() {
                 Contact Me
               </Link>
             </li>
-            <div className="d-flex gap-1 flex-wrap">
-              <button className="btn btn-dark lastelement"><Link to="signup" onClick={closeSidebar} className="btn-dark">Sign Up</Link></button>
-              <button className="btn btn-dark lastelement"><Link to="login" onClick={closeSidebar} className="btn-dark">Login</Link></button>
-            </div>
+            {isAuthenticated ? (
+              <Link to="/profile">
+                <button className="btn btn-dark lastspan hideOnMobile">
+                  Profile
+                </button>
+              </Link>
+            ) : (
+              <div className="d-flex gap-1 flex-wrap">
+                <button className="btn btn-dark lastelement">
+                  <Link to="signup" onClick={closeSidebar} className="btn-dark">
+                    Sign Up
+                  </Link>
+                </button>
+                <button className="btn btn-dark lastelement">
+                  <Link to="login" onClick={closeSidebar} className="btn-dark">
+                    Login
+                  </Link>
+                </button>
+              </div>
+            )}
           </ul>
           <div className="main-logo">
-            <span ref={nameRef} className="myName">{nameText}</span>
+            <span ref={nameRef} className="myName">
+              {nameText}
+            </span>
           </div>
           <div className="li mr-auto">
             <Link to="/" className="hideOnMobile">
@@ -100,13 +127,22 @@ export default function Navbar() {
               Contact Me
             </Link>
           </div>
-          <div>
-            <Link to="login">
-            <button className="btn btn-dark lastspan hideOnMobile">
-              Login
-            </button>
+          {isAuthenticated ? (
+            <Link to="/profile">
+              <button className="btn btn-dark lastspan hideOnMobile">
+                Profile
+              </button>
             </Link>
-          </div>
+          ) : (
+            <Link to="/login">
+              <button
+                className="btn btn-dark lastspan hideOnMobile"
+                onClick={() => loginWithRedirect()}
+              >
+                Login
+              </button>
+            </Link>
+          )}
           <li className="menu-btn" onClick={showSidebar}>
             <Link to="#">
               <img src={open_menu} alt="menu" />

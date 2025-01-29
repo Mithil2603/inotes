@@ -8,7 +8,6 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './Components/About';
 import Contact from './Components/Contact';
 import SignUp from './Components/SignUp';
-import Login from './Components/Login';
 import DcnNotes from './Components/DcnNotes';
 import Linux from './Components/Linux';
 import LinuxCommands from './Components/LinuxCommands';
@@ -28,6 +27,7 @@ import DA from './Components/DA';
 import Python from './Components/Python';
 import INF from './Components/INF';
 import DC from './Components/DC';
+import Profile from './Components/Profile';
 
 
 export default function App() {
@@ -42,7 +42,7 @@ export default function App() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/signup' element={<SignUp />} />
-          <Route path='/login' element={<Login />} />
+          <Route path='/profile' element={<Profile />} />
 
           <Route path='/asp' element={<AspNotes />} />
           <Route path='/da' element={<DA />} />
